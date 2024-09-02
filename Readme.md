@@ -9,7 +9,19 @@ Each question has their own subfolder, with the following content:
 - `02_implementation.ts` - The problem description as seen in leetcode
 - `files` - Optional folder that may contain images or files needed to run the problem
 
-The easiest way to run a problem is with [Bun](https://bun.sh/). All you need to do is run
+> Feel free to use this repository as a template to practice your own implementations 💻👾🖱️
+
+## General Approach
+
+Like my dad always used to say, there's [many ways to skin a cat](https://english.stackexchange.com/questions/32123/origin-of-the-phrase-theres-more-than-one-way-to-skin-a-cat). I was never sure what that meant, but I can tell you that there are a great many ways to approach a coding problem.
+
+I have [a lot of experience in software](https://felipemullen.com), and I have my own [passions to focus](https://ind3x.games) on. So for the most part, I avoided spending more than 10-15 minutes per problem. This means some of the code will be sloppy, and a lot of solutions are not optimal.
+
+That's ok. I am not [John Carmac](https://en.wikipedia.org/wiki/John_Carmack), just a lowly programmer.
+
+## Running a problem
+
+The easiest way to run a problem is with [Bun](https://bun.sh/). All you need to do is run a test file directly, i.e.:
 
 ```
 bun run ./79_word-search/01_test.ts

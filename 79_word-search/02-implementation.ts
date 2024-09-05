@@ -23,7 +23,7 @@ export function exist(board: string[][], word: string): boolean {
     for (let y = 0; y < board.length; ++y) {
         const row = board[y];
         for (let x = 0; x < row.length; ++x) {
-            let newWord = [];
+            let newWord: string[] = [];
 
             makeWord(x, y, newWord);
 

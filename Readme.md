@@ -23,8 +23,17 @@ That's ok. I am not [John Carmac](https://en.wikipedia.org/wiki/John_Carmack), j
 
 The easiest way to run a problem is with [Bun](https://bun.sh/). All you need to do is run a test file directly, i.e.:
 
-```
-bun run ./79_word-search/01_test.ts
+```shell
+# Run a specific test
+bun test 151_reverse-words/01-problem-151.test.ts
+
+# Run all tests
+bun test
+
+# Run all tests and watch for changes
+bun test --watch
 ```
 
-If you don't have/want Bun, ~~you're crazy~~ you can use [Node](https://nodejs.org) if you want, but you will either need to install `tsc` to compile the typescript and then run it directly, or install a package like `ts-node` to run it directly. If you feel like going down that path, check out the [NodeJs typescript documentation](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript) page.
+If you don't have/want `Bun`, ~~you're crazy~~ you can use [Node](https://nodejs.org) if you want, but you will either need to install `tsc` to compile the typescript and then run it directly, or install a package like `ts-node` to run it directly. If you feel like going down that path, check out the [NodeJs typescript documentation](https://nodejs.org/en/learn/getting-started/nodejs-with-typescript) page.
+
+You will also have to change the test files to use a test package like `jest` instead of the built in bun helpers.

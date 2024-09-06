@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'bun:test'
+import { describe, expect, test } from 'bun:test';
 import { maxArea } from './02-implementation';
 
 describe('#11. Container With Most Water', () => {

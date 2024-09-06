@@ -1,4 +1,4 @@
-import { beforeEach, describe, expect, test } from 'bun:test'
+import { beforeEach, describe, expect, test } from 'bun:test';
 import { exist } from './02-implementation';
 
 describe('#79. Word Search', () => {

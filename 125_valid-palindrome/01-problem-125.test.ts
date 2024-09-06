@@ -1,4 +1,4 @@
-import { describe, expect, test } from 'bun:test'
+import { describe, expect, test } from 'bun:test';
 import { isPalindrome } from './02-implementation';
 
 describe('#125. Valid Palindrome', () => {

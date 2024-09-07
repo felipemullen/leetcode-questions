@@ -11,6 +11,14 @@ Each question has their own subfolder, with the following content:
 
 > Feel free to use this repository as a template to practice your own implementations 💻👾🖱️
 
+## Problem index
+
+- [#11. Container With Most Water](11_container-most-water/problem.md)
+- [#79. Word Search](79_word-search/problem.md)
+- [#125. Valid Palindrome](125_valid-palindrome/problem.md)
+- [#151. Reverse Words in a String](151_reverse-words/problem.md)
+- [#238. Product of Array Except Self](238_product-of-array/01-problem-238.test.ts)
+
 ## General Approach
 
 Like my dad always used to say, there's [many ways to skin a cat](https://english.stackexchange.com/questions/32123/origin-of-the-phrase-theres-more-than-one-way-to-skin-a-cat). I was never sure what that meant, but I can tell you that there are a great many ways to approach a coding problem.

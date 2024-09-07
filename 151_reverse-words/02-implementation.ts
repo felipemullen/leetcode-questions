@@ -8,4 +8,4 @@ export function reverseWords(s: string): string {
     }
 
     return newWords.join(' ');
-};
+}

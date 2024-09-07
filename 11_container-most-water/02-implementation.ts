@@ -18,4 +18,4 @@ export function maxArea(height: number[]): number {
     }
 
     return maxArea;
-};
+}

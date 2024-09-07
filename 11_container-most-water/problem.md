@@ -13,7 +13,7 @@ Notice that you may not slant the container.
 ```typescript
 export function maxArea(height: number[]): number {
 
-};
+}
 ```
 
 

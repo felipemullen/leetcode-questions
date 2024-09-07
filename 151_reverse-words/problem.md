@@ -13,7 +13,7 @@ Return *a string of the words in reverse order concatenated by a single space.*
 ```typescript
 export function reverseWords(s: string): string {
     // TODO: Implement your solution here
-};
+}
 ```
 
 ## Example 1:

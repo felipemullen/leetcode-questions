@@ -9,7 +9,7 @@ The word can be constructed from letters of sequentially adjacent cells, where a
 ```typescript
 export function exist(board: string[][], word: string): boolean {
     // TODO: Implement your solution here
-};
+}
 ```
 
 ## Example 1:

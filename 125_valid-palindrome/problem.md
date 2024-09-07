@@ -9,7 +9,7 @@ Given a string `s`, return `true` if it is a palindrome, or `false` otherwise.
 ```typescript
 export function isPalindrome(s: string): boolean {
     // TODO: Implement your solution here
-};
+}
 ```
 
 ## Example 1:

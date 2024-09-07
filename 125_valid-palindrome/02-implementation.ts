@@ -15,7 +15,7 @@ export function isPalindrome(s: string): boolean {
     }
 
     return false;
-};
+}
 
 function isValid(c: string) {
     const regex = /[a-zA-Z]/g;

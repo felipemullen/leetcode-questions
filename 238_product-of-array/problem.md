@@ -11,7 +11,7 @@ You must write an algorithm that runs in `O(n)` time and without using the divis
 ```typescript
 export function productExceptSelf(nums: number[]): number[] {
     // TODO: Implement your solution here
-};
+}
 ```
 
 ## Example 1:

@@ -19,6 +19,7 @@ Each question has their own subfolder, with the following content:
 - [#151. Reverse Words in a String](151_reverse-words/problem.md)
 - [#238. Product of Array Except Self](238_product-of-array/01-problem-238.test.ts)
 - [#283. Move Zeroes](283_move-zeroes/problem.md)
+- [#334. Increasing Triplet Subsequence](334_increasing-triplet-sub/problem.md)
 
 ## General Approach
 

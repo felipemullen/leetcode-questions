@@ -20,6 +20,7 @@ Each question has their own subfolder, with the following content:
 - [#238. Product of Array Except Self](238_product-of-array/01-problem-238.test.ts)
 - [#283. Move Zeroes](283_move-zeroes/problem.md)
 - [#334. Increasing Triplet Subsequence](334_increasing-triplet-sub/problem.md)
+- [#392. Is Subsequence](392_is-subsequence/problem.md)
 
 ## General Approach
 

@@ -21,6 +21,7 @@ Each question has their own subfolder, with the following content:
 - [#283. Move Zeroes](283_move-zeroes/problem.md)
 - [#334. Increasing Triplet Subsequence](334_increasing-triplet-sub/problem.md)
 - [#392. Is Subsequence](392_is-subsequence/problem.md)
+- [#443. String Compression](443_string-compression/problem.md)
 
 ## General Approach
 

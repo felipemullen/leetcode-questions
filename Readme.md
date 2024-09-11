@@ -22,6 +22,7 @@ Each question has their own subfolder, with the following content:
 - [#334. Increasing Triplet Subsequence](334_increasing-triplet-sub/problem.md)
 - [#392. Is Subsequence](392_is-subsequence/problem.md)
 - [#443. String Compression](443_string-compression/problem.md)
+- [#547. Number of Provinces](547_number-of-provinces/problem.md)
 
 ## General Approach
 

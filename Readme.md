@@ -23,6 +23,7 @@ Each question has their own subfolder, with the following content:
 - [#392. Is Subsequence](392_is-subsequence/problem.md)
 - [#443. String Compression](443_string-compression/problem.md)
 - [#547. Number of Provinces](547_number-of-provinces/problem.md)
+- [#643. Maximum Average Subarray I](643_max-average-subarray/problem.md)
 
 ## General Approach
 

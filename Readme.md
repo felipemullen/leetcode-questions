@@ -24,6 +24,7 @@ Each question has their own subfolder, with the following content:
 - [#443. String Compression](443_string-compression/problem.md)
 - [#547. Number of Provinces](547_number-of-provinces/problem.md)
 - [#643. Maximum Average Subarray I](643_max-average-subarray/problem.md)
+- [#841. Keys and Rooms](841_keys-and-rooms/problem.md)
 
 ## General Approach
 

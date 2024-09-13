@@ -26,6 +26,7 @@ Each question has their own subfolder, with the following content:
 - [#643. Maximum Average Subarray I](643_max-average-subarray/problem.md)
 - [#841. Keys and Rooms](841_keys-and-rooms/problem.md)
 - [#933. Number of Recent Calls](933_number-recent-calls/problem.md)
+- [#1071. Greatest Common Divisor of Strings](1071_gcd-strings/problem.md)
 
 ## General Approach
 

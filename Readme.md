@@ -25,6 +25,7 @@ Each question has their own subfolder, with the following content:
 - [#547. Number of Provinces](547_number-of-provinces/problem.md)
 - [#643. Maximum Average Subarray I](643_max-average-subarray/problem.md)
 - [#841. Keys and Rooms](841_keys-and-rooms/problem.md)
+- [#933. Number of Recent Calls](933_number-recent-calls/problem.md)
 
 ## General Approach
 

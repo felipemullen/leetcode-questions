@@ -29,6 +29,7 @@ Each question has their own subfolder, with the following content:
 - [#1071. Greatest Common Divisor of Strings](1071_gcd-strings/problem.md)
 - [#1431. Kids With the Greatest Number of Candies](1431_kids-with-candies/problem.md)
 - [#1466. Reorder Routes to Make All Paths Lead to the City Zero](1466_reorder-routes/problem.md)
+- [#1493. Longest Subarray of 1's After Deleting One Element](1493_long-subarray-binary-delete/problem.md)
 
 ## General Approach
 

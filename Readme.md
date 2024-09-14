@@ -27,6 +27,7 @@ Each question has their own subfolder, with the following content:
 - [#841. Keys and Rooms](841_keys-and-rooms/problem.md)
 - [#933. Number of Recent Calls](933_number-recent-calls/problem.md)
 - [#1071. Greatest Common Divisor of Strings](1071_gcd-strings/problem.md)
+- [#1431. Kids With the Greatest Number of Candies](1431_kids-with-candies/problem.md)
 
 ## General Approach
 

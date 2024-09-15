@@ -30,6 +30,7 @@ Each question has their own subfolder, with the following content:
 - [#1431. Kids With the Greatest Number of Candies](1431_kids-with-candies/problem.md)
 - [#1466. Reorder Routes to Make All Paths Lead to the City Zero](1466_reorder-routes/problem.md)
 - [#1493. Longest Subarray of 1's After Deleting One Element](1493_long-subarray-binary-delete/problem.md)
+- [#1657. Determine if Two Strings Are Close](1657_two-close-strings/problem.md)
 
 ## General Approach
 

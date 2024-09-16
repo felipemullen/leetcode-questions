@@ -32,6 +32,7 @@ Each question has their own subfolder, with the following content:
 - [#1493. Longest Subarray of 1's After Deleting One Element](1493_long-subarray-binary-delete/problem.md)
 - [#1657. Determine if Two Strings Are Close](1657_two-close-strings/problem.md)
 - [#1679. Max Number of K-Sum Pairs](1679_max-number-sum-pairs/problem.md)
+- [#1732. Find the Highest Altitude](1732_highest-altitude/problem.md)
 
 ## General Approach
 

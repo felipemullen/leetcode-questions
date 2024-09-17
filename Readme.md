@@ -36,6 +36,7 @@ Each question has their own subfolder, with the following content:
 - [#1768. Merge Strings Alternately](1768_merge-strings/problem.md)
 - [#2215. Find the Difference of Two Arrays](2215_difference-of-arrays/problem.md)
 - [#2352. Equal Row and Column Pairs](2352_equal-row-column/problem.md)
+- [#2390. Removing Stars From a String](2390_removing-stars/problem.md)
 
 ## General Approach
 

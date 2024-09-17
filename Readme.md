@@ -35,6 +35,7 @@ Each question has their own subfolder, with the following content:
 - [#1732. Find the Highest Altitude](1732_highest-altitude/problem.md)
 - [#1768. Merge Strings Alternately](1768_merge-strings/problem.md)
 - [#2215. Find the Difference of Two Arrays](2215_difference-of-arrays/problem.md)
+- [#2352. Equal Row and Column Pairs](2352_equal-row-column/problem.md)
 
 ## General Approach
 

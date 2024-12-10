@@ -4,9 +4,9 @@ This is a [typescript](https://www.typescriptlang.org/) repository of my persona
 
 Each question has their own subfolder, with the following content:
 
-- `00_problem.md` - The problem description as seen in leetcode
-- `01_test.ts` - The test driver for the problem implementation
-- `02_implementation.ts` - The problem description as seen in leetcode
+- `problem.md` - The problem description as seen in leetcode
+- `01_problem-<number>.test.ts` - The test driver for the problem implementation
+- `02_implementation.ts` - The implementation of the problem
 - `files` - Optional folder that may contain images or files needed to run the problem
 
 > Feel free to use this repository as a template to practice your own implementations 💻👾🖱️
@@ -42,7 +42,7 @@ Each question has their own subfolder, with the following content:
 
 Like my dad always used to say, there's [many ways to skin a cat](https://english.stackexchange.com/questions/32123/origin-of-the-phrase-theres-more-than-one-way-to-skin-a-cat). I was never sure what that meant, but I can tell you that there are a great many ways to approach a coding problem.
 
-I have [a lot of experience in software](https://felipemullen.com), and I have my own [passions to focus](https://ind3x.games) on. So for the most part, I avoided spending more than 10-15 minutes per problem. This means some of the code will be sloppy, and a lot of solutions are not optimal.
+I have [a lot of experience in software](https://felipemullen.com), and I have my own [passion project](https://ind3x.games) to focus on. So for the most part, I avoided spending more than 10-15 minutes per problem. This means some of the code will be sloppy, and a lot of solutions are not optimal.
 
 That's ok. I am not [John Carmac](https://en.wikipedia.org/wiki/John_Carmack), just a lowly programmer.
 

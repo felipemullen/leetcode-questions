@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { isSubsequence } from './02-implementation';
+import { isSubsequence } from './solution.ts';
 
 describe('#392. Is Subsequence', () => {
     test('example 1', () => {

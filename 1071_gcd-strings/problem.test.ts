@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { gcdOfStrings } from './02-implementation';
+import { gcdOfStrings } from './solution.ts';
 
 describe('#1071. Greatest Common Divisor of Strings', () => {
     test('example 1', () => {

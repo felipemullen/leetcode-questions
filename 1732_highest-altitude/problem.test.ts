@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { largestAltitude } from './01-implementation';
+import { largestAltitude } from './solution.ts';
 
 describe('#1732. Find the Highest Altitude', () => {
     test('example 1', () => {

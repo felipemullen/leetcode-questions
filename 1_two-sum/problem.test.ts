@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { twoSum } from './02-implementation';
+import { twoSum } from './solution.ts';
 
 describe('#1. Container With Most Water', () => {
     test('example 1', () => {

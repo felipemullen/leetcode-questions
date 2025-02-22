@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { equalPairs } from './02-implementation';
+import { equalPairs } from './solution.ts';
 
 describe('#2352. Equal Row-Column Pairs', () => {
     test('example 1', () => {

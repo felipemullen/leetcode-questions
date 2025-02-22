@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { compress } from './02-implementation';
+import { compress } from './solution.ts';
 
 describe('#443. String Compression', () => {
     test('example 1', () => {

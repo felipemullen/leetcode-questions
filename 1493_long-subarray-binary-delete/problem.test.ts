@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { longestSubarray } from './02-implementation';
+import { longestSubarray } from './solution.ts';
 
 describe('#1493. Longest Subarray of 1s After Deleting One Element', () => {
     test('example 1', () => {

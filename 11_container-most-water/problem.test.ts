@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { maxArea } from './02-implementation';
+import { maxArea } from './solution.ts';
 
 describe('#11. Container With Most Water', () => {
     test('example 1', () => {

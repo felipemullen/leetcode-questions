@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { maxOperations } from './01-implementation';
+import { maxOperations } from './solution.ts';
 
 describe('#1679. Max Number of K-Sum Pairs', () => {
     test('example 1', () => {

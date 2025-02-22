@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { mergeAlternately } from './02-implementation';
+import { mergeAlternately } from './solution.ts';
 
 describe('#1768. Merge Strings Alternately', () => {
     test('example 1', () => {

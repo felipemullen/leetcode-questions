@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { findCircleNum } from './02-implementation';
+import { findCircleNum } from './solution.ts';
 
 describe('#547. Number of Provinces', () => {
     test('example 1', () => {

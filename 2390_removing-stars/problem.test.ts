@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { removeStars } from './02-implementation';
+import { removeStars } from './solution.ts';
 
 describe('#2390. Removing Stars', () => {
     test('example 1', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { isPalindrome } from './02-implementation';
+import { isPalindrome } from './solution.ts';
 
 describe('#125. Valid Palindrome', () => {
     test('example 1', () => {

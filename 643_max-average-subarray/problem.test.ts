@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { findMaxAverage } from './02-implementation';
+import { findMaxAverage } from './solution.ts';
 
 describe('#643. Maximum Average Subarray I', () => {
     test('example 1', () => {

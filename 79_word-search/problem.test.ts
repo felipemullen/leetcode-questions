@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, test } from 'bun:test';
-import { exist } from './02-implementation';
+import { exist } from './solution.ts';
 
 describe('#79. Word Search', () => {
     let board: string[][];

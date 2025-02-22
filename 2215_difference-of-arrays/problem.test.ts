@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { findDifference } from './02-implementation';
+import { findDifference } from './solution.ts';
 
 describe('#2215. Find the Difference of Arrays', () => {
     test('example 1', () => {

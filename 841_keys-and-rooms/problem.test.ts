@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { canVisitAllRooms } from './02-implementation';
+import { canVisitAllRooms } from './solution.ts';
 
 describe('#841. Keys and Rooms', () => {
     test('example 1', () => {

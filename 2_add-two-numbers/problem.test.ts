@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { addTwoNumbers, ListNode } from './02-implementation';
+import { addTwoNumbers, ListNode } from './solution.ts';
 
 function arrayToList(arr: number[]): ListNode | null {
     return arr.reduce<ListNode | null>((previous, val) => new ListNode(val, previous), null);

@@ -1,5 +1,5 @@
 import { beforeEach, describe, expect, test } from 'bun:test';
-import { RecentCounter } from './02-implementation';
+import { RecentCounter } from './solution.ts';
 
 describe('#933. Number of Recent Calls', () => {
     let counter: RecentCounter;

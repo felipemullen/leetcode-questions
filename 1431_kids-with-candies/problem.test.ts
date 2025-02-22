@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { kidsWithCandies } from './02-implementation';
+import { kidsWithCandies } from './solution.ts';
 
 describe('#1431. Kids With the Greatest Number of Candies', () => {
     test('example 1', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { reverseWords } from './02-implementation';
+import { reverseWords } from './solution.ts';
 
 describe('#151. Reverse Words in a String', () => {
     test('example 1', () => {

@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { moveZeroes } from './02-implementation';
+import { moveZeroes } from './solution.ts';
 
 describe('#283. Move Zeroes', () => {
     test('example 1', () => {

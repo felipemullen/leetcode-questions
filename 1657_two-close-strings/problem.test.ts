@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { closeStrings } from './02-implementation';
+import { closeStrings } from './solution.ts';
 
 describe('#1657. Determine if Two Strings Are Close', () => {
     test('example 1', () => {

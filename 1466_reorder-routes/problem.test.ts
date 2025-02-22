@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { minReorder } from './02-implementation';
+import { minReorder } from './solution.ts';
 
 describe('#1466. Reorder Routes to Make All Paths Lead to the City Zero', () => {
     test('example 1', () => {

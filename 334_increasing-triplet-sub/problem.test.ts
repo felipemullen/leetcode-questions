@@ -1,5 +1,5 @@
 import { describe, expect, test } from 'bun:test';
-import { increasingTriplet } from './02-implementation';
+import { increasingTriplet } from './solution.ts';
 
 describe('#334. Increasing Triplet Subsequence', () => {
     test('example 1', () => {

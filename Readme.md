@@ -5,8 +5,8 @@ This is a [typescript](https://www.typescriptlang.org/) repository of my persona
 Each question has their own subfolder, with the following content:
 
 - `problem.md` - The problem description as seen in leetcode
-- `01_problem-<number>.test.ts` - The test driver for the problem implementation
-- `02_implementation.ts` - The implementation of the problem
+- `problem.test.ts` - The test driver for the problem implementation
+- `solution.ts` - The implementation of the problem
 - `files` - Optional folder that may contain images or files needed to run the problem
 
 > Feel free to use this repository as a template to practice your own implementations 💻👾🖱️
@@ -45,6 +45,15 @@ Like my dad always used to say, there's [many ways to skin a cat](https://englis
 I have [a lot of experience in software](https://felipemullen.com), and I have my own [passion project](https://ind3x.games) to focus on. So for the most part, I avoided spending more than 10-15 minutes per problem. This means some of the code will be sloppy, and a lot of solutions are not optimal.
 
 That's ok. I am not [John Carmac](https://en.wikipedia.org/wiki/John_Carmack), just a lowly programmer.
+
+## Another Approach - Not enough time to code
+
+Assume you are in a programming interview, but you are a mid level engineer, not an expert. You will be working in typescript only. For the problem below, perform the following steps, in order.
+
+1. Verbally explain the naive solution (e.g. to pick the Kth largest element, we could simply sort this array and pick the Kth element from the end) and why you wouldn't want to implement that.
+2. Write down your proposed solution as using lines of comments that will be eventually expanded into actual code. This should be like a pseudo code exercise, where instead of writing code like `myArray.At(-1)` you would just write `take the last element`. If possible, outline possible edge cases or rooms for optimization right away.
+3. Write actual code by expanding the single line comments into actual code.
+4. Perform a dry-run and mention as many optimizations as possible.
 
 ## Running a problem
 

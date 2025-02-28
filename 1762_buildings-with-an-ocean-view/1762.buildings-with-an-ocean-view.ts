@@ -8,15 +8,21 @@
 function findBuildings(heights: number[]): number[] {
   const results: number[] = [];
 
-  let max = 0;
-  for (let i = heights.length - 1; i >= 0; i--) {
+  for (let i = 0; i < heights.length; ++i) {
     const n = heights[i];
-    if (n < max) {
-      // does not have a view
-    } else {
-      results.unshift(i);
-      max = n;
+    
+    if (results.length > 0) {
+      let lastIndex = results.at(-1);
+      let lastheight = heights[lastIndex!];
+
+      while (lastheight < n) {
+        results.pop();
+        lastIndex = results.at(-1)!;
+        lastheight = heights[lastIndex];
+      }
     }
+
+    results.push(i);
   }
 
   return results;
@@ -37,15 +43,29 @@ function findBuildings(heights: number[]): number[] {
 // 3. if n at index i is > n, do not add to the list and break
 // 4. if n makes it to the end of the list, add it to the list
 
-// ALGORITHM
+// RIGHT-BASED
 // 1. iterate in reverse through the array
 // 2. as you iterate, keep a max height
 // 3. if the value of n at i is < max, it does not have a view
-// 4. add all n > max and update max
+// 4. for each item, push to front of the array when n > max and update max
 // 5. since we are iterating in reverse, push to [0] every time
 
-const heights = [4, 2, 3, 1];
+// ALGORITHM
+// 1. Iterate through the array from the left
+// 2. as you iterate, keep a descending stack that tracks buildings with views
+// 3. for each n, remove from the stack any items that are shorter than n
+// 4. push n values that are shorter than the last item in the stack
+
+// const heights = [4, 2, 3, 1];
+// const output = findBuildings(heights);
+// console.log(output); // expect [0, 2, 3]
+
+// const heights = [4, 3, 2, 1];
+// const output = findBuildings(heights);
+// console.log(output); // expect [0, 1, 2, 3]
+
+const heights = [1, 3, 2, 4];
 const output = findBuildings(heights);
-console.log(output); // expect [0, 2, 3]
+console.log(output); // expect [3]
 
 

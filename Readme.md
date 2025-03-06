@@ -51,7 +51,14 @@ That's ok. I am not [John Carmac](https://en.wikipedia.org/wiki/John_Carmack), j
 Assume you are in a programming interview, but you are a mid level engineer, not an expert. You will be working in typescript only. For the problem below, perform the following steps, in order.
 
 1. Verbally explain the naive solution (e.g. to pick the Kth largest element, we could simply sort this array and pick the Kth element from the end) and why you wouldn't want to implement that.
-2. Write down your proposed solution as using lines of comments that will be eventually expanded into actual code. This should be like a pseudo code exercise, where instead of writing code like `myArray.At(-1)` you would just write `take the last element`. If possible, outline possible edge cases or rooms for optimization right away.
+2. Explain an improved ideal solution as a better alternative
+3. Write down your proposed solution as lines of comments that will be eventually expanded into actual code. This should be a numbered list, where instead of writing code like `myArray.At(-1)` you would just write `take the last element`. For example:
+```
+1. iterate through the array
+2. for each item, store the key in the map
+3a. if the value is null, return
+3b. if the value is 0, add to the map
+```
 3. Write actual code by expanding the single line comments into actual code.
 4. Perform a dry-run and mention as many optimizations as possible.
 

@@ -12,12 +12,24 @@ function findKthLargest(nums: number[], k: number): number {
 
   // 2. push elements into a structure that sorts as values are added
   const counts: number[] = [];
-  
+
   // 1. iterate through the list once
   for (let i = 0; i < nums.length; i++) {
     const n = nums[i];
     counts[n] = (counts[n] || 0) + 1;
   }
+
+  // [3,2,3,1,2,4,5,5,6]
+  // [
+  //   0:
+  //   1:1
+  //   2:2
+  //   3:2
+  //   4:1
+  //   5:2
+  //   6:1
+  // ]
+  // [1,2,2,3,3,4,5,5,6].at(-k)
 
   let sum = 0;
   let end = nums.length - k + 1;
@@ -30,7 +42,7 @@ function findKthLargest(nums: number[], k: number): number {
       return nValue;
     }
   }
-  
+
   return -1;
 };
 // @lc code=end
@@ -48,6 +60,14 @@ function findKthLargest(nums: number[], k: number): number {
 // It would be better to be able to do this in a single iteration O(n)
 
 // ALGORITHM
+// 1. iterate through the list once
+// 2. consider obj/map: requires sort. using js array index hack, push counts into array
+//      counts[n] = (counts[n] || 0) + 1
+// 3. iterate through counts (index is n)
+// 4. initialize an array to store expanded values
+// 5. for c of counts: push n into results array c times
+// 6. return expanded.at(-k)
+
 // 1. iterate through the list once
 // 2. push elements into a structure that sorts as values are added
 // 3. retrieve value at k

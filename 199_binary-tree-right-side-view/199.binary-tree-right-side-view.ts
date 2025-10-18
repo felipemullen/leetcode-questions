@@ -21,40 +21,73 @@
 
 function rightSideView(root: TreeNode | null): number[] {
 
-    let depth: Array<{ x: number, node: TreeNode }[]> = [];
-
-    function visit(node: TreeNode | null, x: number, y: number) {
-        if (!node) {
-            return null;
-        }
-
-        visit(node.left, x - 1, y + 1);
-        visit(node.right, x + 1, y + 1);
-
-        if (!depth[y]) {
-            depth[y] = [];
-        }
-
-        depth[y].push({ x, node });
+    if (root == null) {
+        return [];
     }
 
-    visit(root, 0, 0);
+    let queue: Array<{ node: TreeNode | null, depth: number }> = [];
+    let results: number[] = [];
 
-    let results: number[] = depth.map(list => {
-        let highest = Number.MIN_SAFE_INTEGER;
-        let chosen: TreeNode | null = null;
-        for (const item of list) {
-            if (item.x > highest) {
-                highest = item.x;
-                chosen = item.node;
-            }
+    queue.push({ node: root, depth: 0 });
+    while (queue.length) {
+        let { node: next, depth } = queue.shift()!;
+
+        if (next?.val) {
+            results[depth] = next?.val;
         }
-        return chosen?.val || 0;
-    });
+
+        if (next?.left) {
+            queue.push({ node: next.left, depth: depth + 1 });
+        }
+        if (next?.right) {
+            queue.push({ node: next.right, depth: depth + 1 });
+        }
+
+        console.log(next?.val);
+    }
 
     return results;
+
+    // let depth: Array<{ x: number, node: TreeNode }[]> = [];
+
+    // function visit(node: TreeNode | null, x: number, y: number) {
+    //     if (!node) {
+    //         return null;
+    //     }
+
+    //     visit(node.left, x - 1, y + 1);
+    //     visit(node.right, x + 1, y + 1);
+
+    //     if (!depth[y]) {
+    //         depth[y] = [];
+    //     }
+
+    //     depth[y].push({ x, node });
+    // }
+
+    // visit(root, 0, 0);
+
+    // let results: number[] = depth.map(list => {
+    //     let highest = Number.MIN_SAFE_INTEGER;
+    //     let chosen: TreeNode | null = null;
+    //     for (const item of list) {
+    //         if (item.x > highest) {
+    //             highest = item.x;
+    //             chosen = item.node;
+    //         }
+    //     }
+    //     return chosen?.val || 0;
+    // });
+
+    // return results;
 };
 // @lc code=end
+
+// ALGORITHM
+// 1. Iterate through entire tree using BFS
+// 2. initialize an empty array of results
+// 3. for each node n, set or replace results[depth] = n
+// 4. return results
 
 class TreeNode {
     val: number
@@ -95,12 +128,16 @@ function arrayToTreeNode(arr: (number | null)[]): TreeNode | null {
 
 // const root = arrayToTreeNode([1, 2, 3, null, 5, null, 4]);
 // const output = rightSideView(root);
-// console.log(output);
+// console.log(output); // should be [1,3,4]
 
 // const root = arrayToTreeNode([1, 2, 3, 4, null, null, null, 5]);
 // const output = rightSideView(root);
-// console.log(output);
+// console.log(output); // should be [1,3,4,5]
 
-const root = arrayToTreeNode([1, null, 3]);
-const output = rightSideView(root);
-console.log(output);
+// const root = arrayToTreeNode([1, null, 3]);
+// const output = rightSideView(root);
+// console.log(output); // should be 1,3
+
+// const root = arrayToTreeNode([]);
+// const output = rightSideView(root);
+// console.log(output); // should be []

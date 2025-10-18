@@ -45,6 +45,15 @@ function minRemoveToMakeValid(s: string): string {
 };
 // @lc code=end
 
+// 1. keep a counter for valid open and valid close parens
+// 2. iterate through s
+// 3a. if c is '(' increment open
+// 3b. if c is ')' && open > close decrement open
+// 3c. if c is ')' && open <= close increment close
+// 4. iterate from the close and remove ')' while close > 0
+// 5. iterate from the open and remove '(' while open > 0
+// 6. return s
+
 const input = 'lee(t(c)o)de)';
 // const input = '))((';
 // const input = 'a)b(c)d';

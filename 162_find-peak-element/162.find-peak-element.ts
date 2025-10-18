@@ -54,7 +54,7 @@ function findPeakElement(nums: number[]): number {
 // that has a higher value, since we can be certain it will contain a peak
 // 1. define right and left pointers to point to the edges of the array
 // 2. while left < right
-// 3. choose a mid at floor((r-l)/2)
+// 3. choose a mid at floor((l+r)/2)
 // 4a. if mid is a peak, return index
 // 4b. if left is greater than mid, move right to mid
 // 4c. if right is greater than mid, move left to mid + 1

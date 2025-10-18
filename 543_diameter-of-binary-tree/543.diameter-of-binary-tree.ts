@@ -34,18 +34,18 @@ function diameterOfBinaryTree(root: TreeNode | null): number {
     let result = 0;
 
     // KVP: coordinates, height
-    let heights = new Map<TreeNode, number>();
+    let heights = new Map<TreeNode | null, number>();
 
-    function visit(node: TreeNode | null, x: number, y: number) {
+    function visit(node: TreeNode | null) {
         if (!node) {
             return;
         }
 
-        visit(node.left, x - 1, y + 1);
-        visit(node.right, x + 1, y + 1);
+        visit(node.left);
+        visit(node.right);
 
-        const hLeft = node.left ? heights.get(node.left) || 0 : 0;
-        const hRight = node.right ? heights.get(node.right) || 0 : 0;
+        const hLeft = heights.get(node.left) || 0;
+        const hRight = heights.get(node.right) || 0;
         heights.set(node, Math.max(hLeft, hRight) + 1);
 
         const longPath = hLeft + hRight;
@@ -54,7 +54,7 @@ function diameterOfBinaryTree(root: TreeNode | null): number {
         }
     }
 
-    visit(root, 0, 0);
+    visit(root);
 
     return result;
 };
@@ -65,15 +65,23 @@ function diameterOfBinaryTree(root: TreeNode | null): number {
 // and the longest path on the right
 
 // ALGORITHM
-// 1. iterate through the entire tree
-// 2. calculate the longest path for each node
-// 3. store the path length of each node in a dictionary
-// 4. keep a max length after calculating each max path
+// 1. iterate through the entire tree using dfs
+// 2. store the path length of each node in a Map<TreeNode, number>
+// 3. get (left || 0) and (right || 0) heights from map
+// 4. set value of Map at this node to the max height of the children + 1
+// 5. update max diameter
 
-const root = new TreeNode(
+const root1 = new TreeNode(
     1,
     new TreeNode(2, new TreeNode(4), new TreeNode(5)),
     new TreeNode(3)
 );
-const output = diameterOfBinaryTree(root);
-console.log(output);
+const output1 = diameterOfBinaryTree(root1);
+console.log(output1); // expect 3
+
+const root2 = new TreeNode(
+    1,
+    new TreeNode(2)
+);
+const output2 = diameterOfBinaryTree(root2);
+console.log(output2); // expect 1

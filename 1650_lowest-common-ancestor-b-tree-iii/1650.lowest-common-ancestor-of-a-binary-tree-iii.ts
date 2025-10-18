@@ -12,7 +12,7 @@
  *     left: _Node | null
  *     right: _Node | null
  *     parent: _Node | null
- *     
+ *
  *     constructor(v: number) {
  *         this.val = v;
  *         this.left = null;
@@ -43,44 +43,76 @@ function lowestCommonAncestor(p: _Node | null, q: _Node | null): _Node | null {
     return p?.parent;
   }
 
-  const pAncestors: _Node[] = [];
-  const qAncestors: _Node[] = [];
+  let pCount = 0;
+  let qCount = 0;
 
-  // 4. keep pointers for each path
-  let qPath: _Node | null = q;
-  let pPath: _Node | null = p;
+  let pNode = p;
+  let qNode = q;
+  let qlap = false;
+  let plap = false;
 
-  // 2. for each (p,q) traverse upwards
   while (true) {
-    // 3b. if p is ancestor of q, return p
-    if (p && qAncestors.includes(p)) {
-      return p;
+
+    if (plap && qlap && pNode?.val == qNode?.val) {
+      return pNode;
     }
 
-    // 3a. if q is ancestor of p, return q
-    if (q && pAncestors.includes(q)) {
-      return q;
-    }
-    
-    // 5. if pointers meet, return node
-    if (qPath === pPath) {
-      return qPath;
-    }
-
-    if (qPath?.parent) {
-      qAncestors.push(qPath.parent);
-      qPath = qPath?.parent!;
+    if (!pNode?.parent) {
+      pNode = q;
+      plap = true;
     } else {
-      qPath = p;
+      pNode = pNode?.parent;
     }
 
-    if (pPath?.parent) {
-      pAncestors.push(pPath.parent);
-      pPath = pPath?.parent!;
+    if (!qNode?.parent) {
+      qNode = p;
+      qlap = true;
     } else {
-      pPath = q;
+      qNode = qNode?.parent || null;
     }
+
+    ++pCount;
+    ++qCount;
   }
+
+  // const pAncestors: _Node[] = [];
+  // const qAncestors: _Node[] = [];
+
+  // // 4. keep pointers for each path
+  // let qPath: _Node | null = q;
+  // let pPath: _Node | null = p;
+
+  // // 2. for each (p,q) traverse upwards
+  // while (true) {
+  //   // 3b. if p is ancestor of q, return p
+  //   if (p && qAncestors.includes(p)) {
+  //     return p;
+  //   }
+
+  //   // 3a. if q is ancestor of p, return q
+  //   if (q && pAncestors.includes(q)) {
+  //     return q;
+  //   }
+
+  //   // 5. if pointers meet, return node
+  //   if (qPath === pPath) {
+  //     return qPath;
+  //   }
+
+  //   if (qPath?.parent) {
+  //     qAncestors.push(qPath.parent);
+  //     qPath = qPath?.parent!;
+  //   } else {
+  //     qPath = p;
+  //   }
+
+  //   if (pPath?.parent) {
+  //     pAncestors.push(pPath.parent);
+  //     pPath = pPath?.parent!;
+  //   } else {
+  //     pPath = q;
+  //   }
+  // }
 
   return null;
 };

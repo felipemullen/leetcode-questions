@@ -1,6 +1,12 @@
 # leetcode-questions
 
-This is a [typescript](https://www.typescriptlang.org/) repository of my personal responses to several [Leetcode](https://leetcode.com) questions.
+## ⚠️ 2026 update:
+
+Since the rise of AI agents such as Codex, Grok, Claude, etc, there is no point in maintaining a project like this to show anything, because (probably) no one cares any longer. RIP 🪦
+
+---
+
+This ~is~ was a [typescript](https://www.typescriptlang.org/) repository of my personal responses to several [Leetcode](https://leetcode.com) questions.
 
 Each question has their own subfolder, with the following content:
 
